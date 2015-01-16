@@ -35,6 +35,11 @@ Canvas {
 // Callbacks
 // /////////////////////////////////////////////////////////////////
 
+  onContextChanged: {
+      chart = null;
+      requestPaint();
+  }
+
   onPaint: {
       if(!chart) {
 
